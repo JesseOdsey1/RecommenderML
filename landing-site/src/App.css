@@ -1,0 +1,126 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Add this to ensure the background covers the whole page, even when scrolling */
+html, body {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.landing-container {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.cta-button:hover {
+  background: #1d4ed8;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  width: 100%;
+}
+.feature {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  text-align: center;
+}
+.feature h2 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+.feature p {
+  color: #4a5568;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .landing-container {
+    padding: 1rem 0;
+  }
+  .features {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .feature {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.2rem 0.5rem;
+  }
+}
