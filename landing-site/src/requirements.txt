@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+transformers
+torch
+joblib
+json
+os
+numpy
+fastapi.middleware.cors
+pickle
+tensorflow.keras.preprocessing.sequence
