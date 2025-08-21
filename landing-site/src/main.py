@@ -36,7 +36,7 @@ bert_model = AutoModel.from_pretrained('distilbert-base-uncased')
 bert_model.eval()
 
 # Load your trained logistic regression model
-logistic_model = joblib.load("assets\logistic_model.pkl")
+logistic_model = joblib.load("assets\\randomforest_model.pkl")
 n_model = joblib.load("assets\\n_model_title.pkl")
 
 # Optional: load label encoder or a JSON label map to map numeric classes to human-readable labels
