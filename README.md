@@ -2,7 +2,7 @@
 
 to start 
 
-1. install all the necesarry imports via "pip install -r requirements.txt" on the terminal
+1. install all the necessary imports via "pip install -r requirements.txt" on the terminal
 2. in bash go to the "project folder/landing-site/src" then type "uvicorn main:app --reload --host 0.0.0.0 --port 8000"
 3. in terminal go to project folder and type "npm run dev"
 
